@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Dev Helper",
+  "description": "Chrome Extension for Web Developer",
+  "version": "0.1.0",
+  "author": "Swarag Naryanasetty",
+  "browser_action": {
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background":{
+      "scripts":["background.js"]
+  }
+}
