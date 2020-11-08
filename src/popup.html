@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev-Helper</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    Choose Your Customization Options
+    <form id="customization">
+      <table>
+        <thead>
+          <tr>
+            Choose Border Properties
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Border Size</td>
+            <td>
+              <input type="number" min="1" name="size" id="size" value="1" />
+            </td>
+          </tr>
+          <tr>
+            <td>Border Color</td>
+            <td>
+              <input type="color" name="color" id="color" value="#2719e6" />
+            </td>
+          </tr>
+          <tr>
+            <td>Border Style</td>
+            <td>
+              <select name="bStyle" id="bStyle">
+                <option value="dotted">dotted border</option>
+                <option value="dashed">dashed border</option>
+                <option value="solid">solid border</option>
+                <option value="double">double border</option>
+                <option value="groove">3D grooved border</option>
+                <option value="ridge">3D ridged border</option>
+                <option value="inset">3D inset border</option>
+                <option value="outset">3D outset border</option>
+                <option value="none">None</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+
+          </tr>
+        </tbody>
+      </table>
+      <center>
+        <div class="onoffswitch">
+          <input
+            type="checkbox"
+            name="onoffswitch"
+            class="onoffswitch-checkbox"
+            id="myonoffswitch"
+          />
+          <label class="onoffswitch-label" for="myonoffswitch"></label>
+        </div>
+      </center>
+    </form>
+  </body>
+</html>
