@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Dev Helper",
   "description": "Chrome Extension for Web Developer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Swarag Naryanasetty",
   "browser_action": {
     "default_title": "Dev Helper",
