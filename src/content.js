@@ -1,21 +1,30 @@
+"use strict";
 console.log("Using Dev-Helper");
 
-test = document.getElementsByTagName("body");
+const bodyElement = document.getElementsByTagName("body");
+let formData = {};
+let borderProperties = `${formData.size}px ${formData.color} ${formData.bStyle}`;
+// let borderProperties = "1px dashed #0000FF"
 
 function devHelper(event) {
   // highlight the mouseover target
-  event.target.style.border = "1px dashed #0000FF";
+  event.target.style.border = borderProperties;
+
   // reset the border after a short delay
   setTimeout(function () {
     event.target.style.border = "";
   }, 500);
 }
 
-function DevHelperController(command, sender, sendResponse) {
-  if (command.activate) {
-    test[0].addEventListener("mouseover", devHelper, false);
+function DevHelperController(commands, sender, sendResponse) {
+  console.log(commands);
+  if (commands.onoffswitch) {
+    formData = commands;
+    borderProperties = `${formData.size}px ${formData.color} ${formData.bStyle}`;
+    bodyElement[0].addEventListener("mouseover", devHelper, { passive: true });
   } else {
-    test[0].removeEventListener("mouseover", devHelper);
+    bodyElement[0].removeEventListener("mouseover", devHelper);
   }
 }
+
 chrome.runtime.onMessage.addListener(DevHelperController);
