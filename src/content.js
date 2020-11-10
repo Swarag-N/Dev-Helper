@@ -1,6 +1,7 @@
 "use strict";
 console.log("Using Dev-Helper");
 
+
 // Using const
 const bodyElement = document.getElementsByTagName("body");
 let formData = {};
@@ -20,6 +21,7 @@ function devHelper(event) {
     event.target.style.border = "";
   }, 500);
 }
+
 
 /**
  * @function DevHelperController Handles the commands come from popup
