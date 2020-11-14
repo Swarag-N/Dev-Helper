@@ -6,6 +6,8 @@
 <h4 align="center"> Dev-Helper is a Chrome Extension to view borders of DOM Elements (on mouse hover). <h4>
 </p>
 
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Swarag-N/Dev-Helper/)  ![Chrome Web Store](https://img.shields.io/chrome-web-store/users/gefbfanlgpapjneilaccgldmbhbgihdc?style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/Swarag-N/Dev-Helper?style=for-the-badge) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://github.com/Swarag-N/Dev-Helper/)
+
 # Preview 
 
 <p align="center">
@@ -34,7 +36,7 @@
 
 - Google Chrome WebStore
 
-  - Coming Soon
+  - <https://chrome.google.com/webstore/detail/dev-helper/gefbfanlgpapjneilaccgldmbhbgihdc>
 
 - Add Manually
   - Download Latest Version of `src.zip`
